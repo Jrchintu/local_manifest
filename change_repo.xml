@@ -14,8 +14,4 @@
         <remove-project name="android_vendor_codeaurora_telephony" />
 	<project path="vendor/codeaurora/telephony" name="StagOS/android_vendor_codeaurora_telephony" remote="github" revision="r11"/>
 	
-	# Settings
-	<remove-project name="platform_packages_apps_Settings" />
-	<project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="chintuos" revision="auto"/>
-	
 </manifest>
