@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-	<remote  name="apon"
-		fetch="https://github.com/Apon77" />
-	<remote  name="zeelog"
-         	fetch="https://github.com/zeelog" />
-	<remote  name="dicky"
-		fetch="https://github.com/Nicklas373" />
 	<remote  name="chintu"
 		fetch="https://github.com/jrchintu" />	
  
- 	<project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="chintu" revision="WIP"/>
+ 	<project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="chintu" revision="CORVUS"/>
 	<project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="chintu" revision="R11" />
 	<project path="vendor/xiaomi" name="vendor_xiaomi_mido" remote="chintu" revision="R11"/>
+	<project path="external/bromite-webview" name="external_bromite-webview" remote="chintu" revision="R11"/>
 	
 </manifest>
