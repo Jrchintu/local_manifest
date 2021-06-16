@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote  name="chintuos" fetch="https://github.com/chintuos" />
-	
-        # Frameworks base
-	<remove-project name="platform_frameworks_base" />
-	<project path="frameworks/base" name="platform_frameworks_base" remote="chintuos" revision="auto"/>
 
-        # Telephony
+        # OPT Telephony
 	<remove-project name="platform_frameworks_opt_telephony" />
 	<project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="chintuos" revision="auto"/>
 	
