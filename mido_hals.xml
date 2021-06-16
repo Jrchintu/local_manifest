@@ -2,7 +2,7 @@
 <manifest>
     <remote name="ali" fetch="https://github.com/android-eleven/" />
     <remote name="anar" fetch="https://github.com/Jabiyeff/" />
-    <remote name="chintuos" fetch="https://github.com/ChintuOs-Devices/" />
+    <remote name="smokey" fetch="https://github.com/smokey18/" />
     
     # HALS
     <remove-project name="android_hardware_qcom_audio" />
@@ -10,6 +10,6 @@
     <remove-project name="android_hardware_qcom_media" />
     <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="anar" revision="caf-msm8996-r" />
     <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media" groups="pdk,qcom,qcom_media" remote="anar" revision="caf-msm8996-r" />
-    <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="anar" revision="16.04.21-r" />
+    <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="anar" revision="caf-msm8996-r" />
     
 </manifest>
