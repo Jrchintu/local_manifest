@@ -9,7 +9,7 @@
 		fetch="https://github.com/Apon77" />
 
  	<project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="chintu" revision="AEX"/>
-	<project path="kernel/xiaomi/mido" name="kernel_xiaomi_mido" remote="chintu" revision="R11" />
+	<project path="kernel/xiaomi/mido" name="sleepy_kernel_xiaomi_mido" remote="chintu" revision="R11" />
 	<project path="vendor/xiaomi" name="vendor_xiaomi_mido" remote="chintu" revision="R11"/>
 	<project path="external/bromite-webview" name="external_bromite-webview" remote="chintu" revision="R11"/>
 
