@@ -55,7 +55,17 @@
 	<project name="AOSP-whatever/platform_vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="github" revision="android-11.0.0" />
 
   <!-- APPS STUFF -->
-	<!-- remove-project name="platform/hardware/qcom/camera" /><remove-project name="platform/packages/apps/Browser2" /><remove-project name="platform/packages/apps/Calendar" /><remove-project name="platform/packages/apps/Contacts" /><remove-project name="platform/packages/apps/DeskClock" /><remove-project name="platform/packages/apps/Gallery" /><remove-project name="platform/packages/apps/Gallery2" /><remove-project name="platform/packages/apps/SettingsIntelligence" /><project name="AOSP-whatever/platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="github" revision="android-11.0.0" /><project name="omnirom/android_packages_apps_Matlog" path="packages/apps/Matlog" remote="github" revision="android-11" /><project name="AOSP-whatever/platform_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="android-11.0.0" /-->
+	<!-- remove-project name="platform/hardware/qcom/camera" />
+	<remove-project name="platform/packages/apps/Browser2" />
+	<remove-project name="platform/packages/apps/Calendar" />
+	<remove-project name="platform/packages/apps/Contacts" />
+	<remove-project name="platform/packages/apps/DeskClock" />
+	<remove-project name="platform/packages/apps/Gallery" />
+	<remove-project name="platform/packages/apps/Gallery2" />
+	<remove-project name="platform/packages/apps/SettingsIntelligence" />
+	<project name="AOSP-whatever/platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="github" revision="android-11.0.0" />
+	<project name="omnirom/android_packages_apps_Matlog" path="packages/apps/Matlog" remote="github" revision="android-11" />
+	<project name="AOSP-whatever/platform_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="android-11.0.0" /-->
 
   <!-- REMOVE STUFF -->
 	<remove-project name="android_hardware_qcom_sm8150_display" />
