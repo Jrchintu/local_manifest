@@ -76,12 +76,10 @@
 	<remove-project name="platform/hardware/qcom/gps" />
 	<remove-project name="platform/packages/apps/QuickSearchBox" />
 
-  <!-- EXTRA STUFF -->
+  <!-- DEVICE STUFF -->
 	<project name="rahifm/repo_update" path="vendor/repo_update" remote="github" revision="staging/proton-rvc" >
 		<linkfile src="repo_update.sh" dest="repo_update.sh" />
 	</project>
-
-  <!-- DEVICE STUFF -->
 	<project name="rahifm/device_xiaomi_mido" path="device/xiaomi/mido" remote="github" revision="staging/proton-rvc" >
 		<linkfile src="build.sh" dest="build.sh" />
 		<linkfile src="localbuild.sh" dest="localbuild.sh" />
