@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
   <!-- REMOTE STUFF -->
 	<remote name="github" fetch="https://github.com" />
-	<remote  name="aosp" fetch="https://android.googlesource.com" />
-  
+	<remote name="aosp" fetch="https://android.googlesource.com" />
+
   <!-- LINEAGE STUFF -->
 	<project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy" remote="github" revision="lineage-18.1-legacy" />
 	<project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy-um" remote="github" revision="lineage-18.1-legacy-um" />
@@ -21,7 +22,7 @@
 	<project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="lineage-18.1" />
 	<remove-project name="android_vendor_qcom_opensource_interfaces" />
 	<project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="lineage-18.1" />
-  
+
   <!-- AOSP STUFF -->
 	<project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
 	<remove-project name="android_external_zlib-ng" />
@@ -52,20 +53,10 @@
 	<project name="AOSP-whatever/platform_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="android-11.0.0" />
 	<project name="AOSP-whatever/platform_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" revision="staging/android-11.0.0" />
 	<project name="AOSP-whatever/platform_vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="github" revision="android-11.0.0" />
-	
+
   <!-- APPS STUFF -->
-	<!-- remove-project name="platform/hardware/qcom/camera" />
-	<remove-project name="platform/packages/apps/Browser2" />
-	<remove-project name="platform/packages/apps/Calendar" />
-	<remove-project name="platform/packages/apps/Contacts" />
-	<remove-project name="platform/packages/apps/DeskClock" />
-	<remove-project name="platform/packages/apps/Gallery" />
-	<remove-project name="platform/packages/apps/Gallery2" />
-	<remove-project name="platform/packages/apps/SettingsIntelligence" />
-	<project name="AOSP-whatever/platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="github" revision="android-11.0.0" />
-	<project name="omnirom/android_packages_apps_Matlog" path="packages/apps/Matlog" remote="github" revision="android-11" />
-	<project name="AOSP-whatever/platform_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="android-11.0.0" /-->
-		
+	<!-- remove-project name="platform/hardware/qcom/camera" /><remove-project name="platform/packages/apps/Browser2" /><remove-project name="platform/packages/apps/Calendar" /><remove-project name="platform/packages/apps/Contacts" /><remove-project name="platform/packages/apps/DeskClock" /><remove-project name="platform/packages/apps/Gallery" /><remove-project name="platform/packages/apps/Gallery2" /><remove-project name="platform/packages/apps/SettingsIntelligence" /><project name="AOSP-whatever/platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="github" revision="android-11.0.0" /><project name="omnirom/android_packages_apps_Matlog" path="packages/apps/Matlog" remote="github" revision="android-11" /><project name="AOSP-whatever/platform_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="android-11.0.0" /-->
+
   <!-- REMOVE STUFF -->
 	<remove-project name="android_hardware_qcom_sm8150_display" />
 	<remove-project name="android_hardware_qcom_sm8150_media" />
@@ -74,12 +65,12 @@
 	<remove-project name="device/generic/opengl-transport" />
 	<remove-project name="platform/hardware/qcom/gps" />
 	<remove-project name="platform/packages/apps/QuickSearchBox" />
-	
+
   <!-- EXTRA STUFF -->
 	<project name="rahifm/repo_update" path="vendor/repo_update" remote="github" revision="staging/proton-rvc" >
 		<linkfile src="repo_update.sh" dest="repo_update.sh" />
 	</project>
-	
+
   <!-- DEVICE STUFF -->
 	<project name="rahifm/device_xiaomi_mido" path="device/xiaomi/mido" remote="github" revision="staging/proton-rvc" >
 		<linkfile src="build.sh" dest="build.sh" />
@@ -90,7 +81,7 @@
 	</project>
 	<project name="rahifm/android_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="github" revision="staging/android-11.0.0" />
 	<project name="rahifm/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="staging/proton-rvc" />
-	
+
   <!-- DEVICE HAL -->
 	<project name="rahifm/hardware_qcom_display" path="hardware/qcom/display-caf-msm8996" remote="github" revision="android-11-8996" />
 	<project name="rahifm/hardware_qcom_audio" path="hardware/qcom/audio-caf-msm8996" remote="github" revision="android-11-8996" />
