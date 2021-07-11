@@ -1,16 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+	<!-- REMOTE STUFF -->
+	<remote name="github" fetch="https://github.com" />
+	<remote  name="aosp" fetch="https://android.googlesource.com" />
+  
+	<!-- LINEAGE STUFF -->
+	<project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy" remote="github" revision="lineage-18.1-legacy" />
+	<project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy-um" remote="github" revision="lineage-18.1-legacy-um" />
+	<project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="lineage-18.1" />
+	<project name="LineageOS/android_external_exfatprogs" path="external/exfatprogs" remote="github" revision="lineage-18.1" />
+	<project name="LineageOS/android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" remote="github" revision="lineage-18.1" />
+	<project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="lineage-18.1" />
+	<project name="LineageOS/android_vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="lineage-18.1" />
+	<project name="LineageOS/android_vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="github" revision="lineage-18.1" />
+	<remove-project name="android_external_json-c" />
+	<project name="LineageOS/android_external_json-c" path="external/json-c" remote="github" revision="lineage-18.1" />
+	<remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+	<project name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" remote="github" revision="lineage-18.1" />
+	<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+	<project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="lineage-18.1" />
+	<remove-project name="android_vendor_qcom_opensource_interfaces" />
+	<project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="lineage-18.1" />
+  
+  <!-- AOSP STUFF -->
+	<project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
+	<remove-project name="android_external_zlib-ng" />
+	<project name="platform/external/zlib" path="external/zlib" remote="aosp" />
 
-	<remote  name="b1"
-		fetch="https://github.com/Ramdibaaz" />
-	<remote  name="chintu"
-		fetch="https://github.com/jrchintu" />	
-	<remote  name="apon"
-		fetch="https://github.com/Apon77" />
-
- 	<project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="chintu" revision="AEX"/>
-	<project path="kernel/xiaomi/mido" name="sleepy_kernel_xiaomi_mido" remote="chintu" revision="R11" />
-	<project path="vendor/xiaomi" name="vendor_xiaomi_mido" remote="chintu" revision="R11"/>
-	<project path="external/bromite-webview" name="external_bromite-webview" remote="chintu" revision="R11"/>
-
+  <!-- AOSP-WHATEVER -->
+	<remove-project name="platform/bootable/recovery" />
+	<project name="AOSP-whatever/platform_bootable_recovery" path="bootable/recovery" remote="github" revision="android-11.0.0" />
+	<remove-project name="platform/external/perfetto" />
+	<project name="AOSP-whatever/platform_external_perfetto" path="external/perfetto" remote="github" revision="android-11.0.0" />
+	<remove-project name="platform/external/tinycompress" />
+	<project name="AOSP-whatever/platform_external_tinycompress" path="external/tinycompress" remote="github" revision="android-11.0.0" />
+	<remove-project name="platform/frameworks/opt/net/wifi" />
+	<project name="AOSP-whatever/platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="android-11.0.0" />
+	<remove-project name="platform/hardware/interfaces" />
+	<project name="AOSP-whatever/platform_hardware_interfaces" path="hardware/interfaces" remote="github" revision="android-11.0.0" />
+	<remove-project name="platform/hardware/libhardware" />
+	<project name="AOSP-whatever/platform_hardware_libhardware" path="hardware/libhardware" remote="github" revision="android-11.0.0" />
+	<remove-project name="platform/hardware/qcom/bt" />
+	<project name="AOSP-whatever/platform_hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="android-11.0.0" />
+	<remove-project name="platform/hardware/qcom/wlan" />
+	<project name="AOSP-whatever/platform_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="android-11.0.0" />
+	<remove-project name="platform/platform_testing" />
+	<project name="AOSP-whatever/platform_platform_testing" path="platform_testing" remote="github" revision="android-11.0.0" />
+	<remove-project name="platform/system/vold" />
+	<project name="AOSP-whatever/platform_system_vold" path="system/vold" remote="github" revision="android-11.0.0" />
+	<project name="AOSP-whatever/platform_external_libbfqio" path="external/libbfqio" remote="github" revision="android-11.0.0" />
+	<project name="AOSP-whatever/platform_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="android-11.0.0" />
+	<project name="AOSP-whatever/platform_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" revision="staging/android-11.0.0" />
+	<project name="AOSP-whatever/platform_vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="github" revision="android-11.0.0" />
+	
+  <!-- APPS STUFF -->
+	<!-- remove-project name="platform/hardware/qcom/camera" />
+	<remove-project name="platform/packages/apps/Browser2" />
+	<remove-project name="platform/packages/apps/Calendar" />
+	<remove-project name="platform/packages/apps/Contacts" />
+	<remove-project name="platform/packages/apps/DeskClock" />
+	<remove-project name="platform/packages/apps/Gallery" />
+	<remove-project name="platform/packages/apps/Gallery2" />
+	<remove-project name="platform/packages/apps/SettingsIntelligence" />
+	<project name="AOSP-whatever/platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="github" revision="android-11.0.0" />
+	<project name="omnirom/android_packages_apps_Matlog" path="packages/apps/Matlog" remote="github" revision="android-11" />
+	<project name="AOSP-whatever/platform_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="android-11.0.0" /-->
+		
+  <!-- REMOVE STUFF -->
+	<remove-project name="android_hardware_qcom_sm8150_display" />
+	<remove-project name="android_hardware_qcom_sm8150_media" />
+	<remove-project name="platform/hardware/qcom/sm8150/gps" />
+	<remove-project name="android_vendor_qcom_opensource_core-utils" />
+	<remove-project name="device/generic/opengl-transport" />
+	<remove-project name="platform/hardware/qcom/gps" />
+	<remove-project name="platform/packages/apps/QuickSearchBox" />
+	
+  <!-- EXTRA STUFF -->
+	<project name="rahifm/repo_update" path="vendor/repo_update" remote="github" revision="staging/proton-rvc" >
+		<linkfile src="repo_update.sh" dest="repo_update.sh" />
+	</project>
+	
+  <!-- DEVICE STUFF -->
+	<project name="rahifm/device_xiaomi_mido" path="device/xiaomi/mido" remote="github" revision="staging/proton-rvc" >
+		<linkfile src="build.sh" dest="build.sh" />
+		<linkfile src="localbuild.sh" dest="localbuild.sh" />
+		<linkfile src="tgup.sh" dest="tgup.sh" />
+		<linkfile src="upload.sh" dest="upload.sh" />
+		<linkfile src="prebuiltkernelupdate.sh" dest="prebuiltkernelupdate.sh" />
+	</project>
+	<project name="rahifm/android_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="github" revision="staging/android-11.0.0" />
+	<project name="rahifm/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="staging/proton-rvc" />
+	
+  <!-- DEVICE HAL -->
+	<project name="rahifm/hardware_qcom_display" path="hardware/qcom/display-caf-msm8996" remote="github" revision="android-11-8996" />
+	<project name="rahifm/hardware_qcom_audio" path="hardware/qcom/audio-caf-msm8996" remote="github" revision="android-11-8996" />
+	<project name="rahifm/hardware_qcom_media" path="hardware/qcom/media-caf-msm8996" remote="github" revision="android-11-8996" />
 </manifest>
