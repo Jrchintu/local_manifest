@@ -6,12 +6,14 @@
     <remote name="smokey" fetch="https://github.com/smokey18/" />
     
     # Device Stuff
+    
     <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="chintu" revision="CORVUS"/>
     <project path="kernel/xiaomi/mido" name="sleepy_kernel_xiaomi_mido" remote="chintu" revision="R11" />
     <project path="vendor/xiaomi" name="vendor_xiaomi_mido" remote="chintu" revision="R11"/>
     <project path="external/bromite-webview" name="external_bromite-webview" remote="chintu" revision="R11"/>
 
     # HALS    
+    
     <remove-project name="android_hardware_qcom_audio" />
     <remove-project name="android_hardware_qcom_display" />
     <remove-project name="android_hardware_qcom_media" />
