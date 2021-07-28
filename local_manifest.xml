@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote  name="chintu" fetch="https://github.com/jrchintu" />
+    <remote name="chintu" fetch="https://github.com/jrchintu" />
     <remote name="cos" fetch="https://github.com/ChintuOs/" />
     <remote name="anar" fetch="https://github.com/Jabiyeff/" />
     <remote name="smokey" fetch="https://github.com/smokey18/" />
+    
+    # Extra packages
+    <project name="ProtonAOSP/android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="github" revision="rvc"  />
     
     # Device Stuff
     
