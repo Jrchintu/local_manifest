@@ -8,12 +8,12 @@
     # Extra packages
     <project name="ProtonAOSP/android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="github" revision="rvc" clone-depth="1" />
     <project path="prebuilts/bromite" name="chintu4041/prebuilts_bromite" remote="gitlab" revision="master" clone-depth="1" />
+    <project path="external/bromite-webview" name="external_bromite-webview" remote="chintu" revision="R11" clone-depth="1" />
     
     # Device Stuff
     <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="chintu" revision="CORVUS" clone-depth="1" />
     <project path="kernel/xiaomi/mido" name="sleepy_kernel_xiaomi_mido" remote="chintu" revision="R11" clone-depth="1" />
     <project path="vendor/xiaomi" name="vendor_xiaomi_mido" remote="chintu" revision="R11" clone-depth="1" />
-    <project path="external/bromite-webview" name="external_bromite-webview" remote="chintu" revision="R11" clone-depth="1" />
 
     # HALS    
     <remove-project name="android_hardware_qcom_audio" />
