@@ -3,11 +3,12 @@
     <remote name="chintu" fetch="https://github.com/jrchintu" />
     <remote name="cos" fetch="https://github.com/ChintuOs/" />
     <remote name="anar" fetch="https://github.com/Jabiyeff/" />
+    <remote name="chintu404" fetch="https://gitlab.com/chintu404/" />
     <remote name="smokey" fetch="https://github.com/smokey18/" />
     
     # Extra packages
     <project name="ProtonAOSP/android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="github" revision="rvc" clone-depth="1" />
-    <project path="prebuilts/bromite" name="chintu4041/prebuilts_bromite" remote="gitlab" revision="master" clone-depth="1" />
+    <project path="prebuilts/bromite" name="bromite_browser" remote="chintu404" revision="master" clone-depth="1" />
     <project path="external/bromite-webview" name="external_bromite-webview" remote="chintu" revision="R11" clone-depth="1" />
     
     # Device Stuff
