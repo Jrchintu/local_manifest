@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- REMOTE STUFF -->
+  <!-- REMOTE-STUFF -->
 	<remote name="github" fetch="https://github.com" />
 	<!-- remote name="aosp" fetch="https://android.googlesource.com" -->
 
-  <!-- LINEAGE STUFF -->
+  <!-- LINEAGE-STUFF -->
 	<project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy" remote="github" revision="lineage-18.1-legacy" />
 	<project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy-um" remote="github" revision="lineage-18.1-legacy-um" />
 	<project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="lineage-18.1" />
@@ -23,32 +23,16 @@
 	<remove-project name="android_vendor_qcom_opensource_interfaces" />
 	<project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="lineage-18.1" />
 
-  <!-- AOSP STUFF -->
+  <!-- AOSP-STUFF -->
 	<project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
 	<remove-project name="android_external_zlib-ng" />
 	<project name="platform/external/zlib" path="external/zlib" remote="aosp" />
 
-  <!-- AOSP-WHATEVER -->
-	<remove-project name="platform/bootable/recovery" />
-	<project name="AOSP-whatever/platform_bootable_recovery" path="bootable/recovery" remote="github" revision="android-11.0.0" />
-	<remove-project name="platform/external/perfetto" />
-	<project name="AOSP-whatever/platform_external_perfetto" path="external/perfetto" remote="github" revision="android-11.0.0" />
-	<remove-project name="platform/external/tinycompress" />
-	<project name="AOSP-whatever/platform_external_tinycompress" path="external/tinycompress" remote="github" revision="android-11.0.0" />
-	<remove-project name="platform/frameworks/opt/net/wifi" />
-	<project name="AOSP-whatever/platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="android-11.0.0" />
-	<remove-project name="platform/hardware/interfaces" />
-	<project name="AOSP-whatever/platform_hardware_interfaces" path="hardware/interfaces" remote="github" revision="android-11.0.0" />
-	<remove-project name="platform/hardware/libhardware" />
-	<project name="AOSP-whatever/platform_hardware_libhardware" path="hardware/libhardware" remote="github" revision="android-11.0.0" />
+  <!-- CUSTOM-CAF/AOSP-STUFF -->
 	<remove-project name="platform/hardware/qcom/bt" />
 	<project name="AOSP-whatever/platform_hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="android-11.0.0" />
 	<remove-project name="platform/hardware/qcom/wlan" />
 	<project name="AOSP-whatever/platform_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="android-11.0.0" />
-	<remove-project name="platform/platform_testing" />
-	<project name="AOSP-whatever/platform_platform_testing" path="platform_testing" remote="github" revision="android-11.0.0" />
-	<remove-project name="platform/system/vold" />
-	<project name="AOSP-whatever/platform_system_vold" path="system/vold" remote="github" revision="android-11.0.0" />
 	<project name="AOSP-whatever/platform_external_libbfqio" path="external/libbfqio" remote="github" revision="android-11.0.0" />
 	<project name="AOSP-whatever/platform_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="android-11.0.0" />
 	<project name="AOSP-whatever/platform_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" revision="staging/android-11.0.0" />
@@ -62,12 +46,10 @@
 	<remove-project name="platform/packages/apps/DeskClock" />
 	<remove-project name="platform/packages/apps/Gallery" />
 	<remove-project name="platform/packages/apps/Gallery2" />
-	<remove-project name="platform/packages/apps/SettingsIntelligence" />
-	<project name="AOSP-whatever/platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="github" revision="android-11.0.0" />
 	<project name="omnirom/android_packages_apps_Matlog" path="packages/apps/Matlog" remote="github" revision="android-11" />
 	<project name="AOSP-whatever/platform_packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="android-11.0.0" /-->
 
-  <!-- REMOVE STUFF -->
+  <!-- REMOVE-STUFF -->
 	<remove-project name="android_hardware_qcom_sm8150_display" />
 	<remove-project name="android_hardware_qcom_sm8150_media" />
 	<remove-project name="platform/hardware/qcom/sm8150/gps" />
@@ -76,7 +58,7 @@
 	<remove-project name="platform/hardware/qcom/gps" />
 	<remove-project name="platform/packages/apps/QuickSearchBox" />
 
-  <!-- DEVICE STUFF -->
+  <!-- DEVICE-STUFF -->
 	<project name="rahifm/repo_update" path="vendor/repo_update" remote="github" revision="staging/proton-rvc" >
 		<linkfile src="repo_update.sh" dest="repo_update.sh" />
 	</project>
